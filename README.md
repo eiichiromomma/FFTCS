@@ -5,7 +5,7 @@
 
 ## 導入方法
 
-Cloneした後でVisual StudioでNuget構成を復元するとすぐ使えます。
+OpenCvSharpを使ってますが，Cloneした後にVisual StudioでNuget構成を復元するとすぐ使えます。
 
 ## 画面構成
 
