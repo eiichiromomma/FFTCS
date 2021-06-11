@@ -159,9 +159,16 @@ namespace FFTCS
             // →参照 https://www.umayadia.com/cssample/sample0201/Sample275WinFormMouseToDraw.htm
             foreach (var stroke in Strokes)
             {
+                // クリックだとストロークのカウントが0
+                if (stroke.Count == 0)
+                {
+                    continue;
+                }
                 var path = new System.Drawing.Drawing2D.GraphicsPath(stroke.ToArray(), Enumerable.Repeat<byte>(1, stroke.Count).ToArray());
                 e.Graphics.DrawPath(drawPen, path);
             }
+            e.Graphics.DrawLine(Pens.Yellow, FILTERpictureBox.Width / 2, 0, FILTERpictureBox.Width / 2, FILTERpictureBox.Height);
+            e.Graphics.DrawLine(Pens.Yellow, 0, FILTERpictureBox.Height / 2, FILTERpictureBox.Width, FILTERpictureBox.Height / 2);
         }
 
         private void FILTERpictureBox_MouseMove(object sender, MouseEventArgs e)
@@ -181,6 +188,10 @@ namespace FFTCS
             Graphics g = Graphics.FromImage(filterBmp);
             foreach (var stroke in Strokes)
             {
+                if (stroke.Count == 0)
+                {
+                    continue;
+                }
                 var path = new System.Drawing.Drawing2D.GraphicsPath(stroke.ToArray(), Enumerable.Repeat<byte>(1, stroke.Count).ToArray());
                 g.DrawPath(drawPen, path);
             }

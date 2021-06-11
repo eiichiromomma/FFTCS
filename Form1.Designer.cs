@@ -55,12 +55,13 @@
             this.tableLayoutPanel1.Controls.Add(this.IFFTpictureBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.FFTpictureBox, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.FILTERpictureBox, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(16, 15);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(626, 453);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(835, 566);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // CAMpictureBox
@@ -69,9 +70,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CAMpictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.CAMpictureBox.Location = new System.Drawing.Point(3, 3);
+            this.CAMpictureBox.Location = new System.Drawing.Point(4, 4);
+            this.CAMpictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CAMpictureBox.Name = "CAMpictureBox";
-            this.CAMpictureBox.Size = new System.Drawing.Size(307, 220);
+            this.CAMpictureBox.Size = new System.Drawing.Size(409, 275);
             this.CAMpictureBox.TabIndex = 0;
             this.CAMpictureBox.TabStop = false;
             // 
@@ -80,9 +82,10 @@
             this.IFFTpictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.IFFTpictureBox.Location = new System.Drawing.Point(316, 3);
+            this.IFFTpictureBox.Location = new System.Drawing.Point(421, 4);
+            this.IFFTpictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.IFFTpictureBox.Name = "IFFTpictureBox";
-            this.IFFTpictureBox.Size = new System.Drawing.Size(307, 220);
+            this.IFFTpictureBox.Size = new System.Drawing.Size(410, 275);
             this.IFFTpictureBox.TabIndex = 1;
             this.IFFTpictureBox.TabStop = false;
             // 
@@ -91,9 +94,10 @@
             this.FFTpictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.FFTpictureBox.Location = new System.Drawing.Point(3, 229);
+            this.FFTpictureBox.Location = new System.Drawing.Point(4, 287);
+            this.FFTpictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FFTpictureBox.Name = "FFTpictureBox";
-            this.FFTpictureBox.Size = new System.Drawing.Size(307, 221);
+            this.FFTpictureBox.Size = new System.Drawing.Size(409, 275);
             this.FFTpictureBox.TabIndex = 2;
             this.FFTpictureBox.TabStop = false;
             // 
@@ -102,9 +106,10 @@
             this.FILTERpictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.FILTERpictureBox.BackColor = System.Drawing.Color.Black;
-            this.FILTERpictureBox.Location = new System.Drawing.Point(316, 229);
+            this.FILTERpictureBox.Location = new System.Drawing.Point(421, 287);
+            this.FILTERpictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FILTERpictureBox.Name = "FILTERpictureBox";
-            this.FILTERpictureBox.Size = new System.Drawing.Size(307, 221);
+            this.FILTERpictureBox.Size = new System.Drawing.Size(409, 275);
             this.FILTERpictureBox.TabIndex = 3;
             this.FILTERpictureBox.TabStop = false;
             this.FILTERpictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.FILTERpictureBox_Paint);
@@ -115,9 +120,10 @@
             // Clearbutton
             // 
             this.Clearbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Clearbutton.Location = new System.Drawing.Point(12, 471);
+            this.Clearbutton.Location = new System.Drawing.Point(16, 589);
+            this.Clearbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Clearbutton.Name = "Clearbutton";
-            this.Clearbutton.Size = new System.Drawing.Size(114, 46);
+            this.Clearbutton.Size = new System.Drawing.Size(152, 58);
             this.Clearbutton.TabIndex = 1;
             this.Clearbutton.Text = "Clear";
             this.Clearbutton.UseVisualStyleBackColor = true;
@@ -130,12 +136,13 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 529);
+            this.ClientSize = new System.Drawing.Size(867, 661);
             this.Controls.Add(this.Clearbutton);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
