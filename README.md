@@ -9,7 +9,7 @@ OpenCvSharpを使ってますが，Cloneした後にVisual StudioでNuget構成�
 
 ## 画面構成
 
-![](https://github.com/eiichiromomma/FFTCS/blob/master/sample.png)
+![](https://github.com/eiichiromomma/FFTCS/blob/master/FFTCS.gif)
 
 * 左上: カメラ画像
 * 左下: カメラ画像の空間周波数パワースペクトル(+1してlog)
