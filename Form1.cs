@@ -204,6 +204,8 @@ namespace FFTCS
             Strokes.Clear();
             FILTERgraphics.Clear(Color.Black);
             filter.SetTo(0);
+            FILTERgraphics.DrawLine(Pens.Yellow, FILTERpictureBox.Width / 2, 0, FILTERpictureBox.Width / 2, FILTERpictureBox.Height);
+            FILTERgraphics.DrawLine(Pens.Yellow, 0, FILTERpictureBox.Height / 2, FILTERpictureBox.Width, FILTERpictureBox.Height / 2);
         }
     }
 }
